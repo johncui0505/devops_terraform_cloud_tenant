@@ -16,7 +16,7 @@ provider "aci" {
 }
 
 module "tenant" {
-  source   = "https://github.com/johncui0505/devops_terraform_cloud_tenant/tree/main/module/tenant"
+  source   = "https://github.com/johncui0505/devops_terraform_cloud_tenant.git//module//tenant"
   for_each = var.tenants
   tenant   = each.value
 }
