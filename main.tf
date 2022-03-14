@@ -21,6 +21,6 @@ module "tenant" {
   tenant   = each.value
 }
 
-output "tenant" {
-  value = module.tenant
-}
+# output "tenant" {
+#   value = module.tenant
+# }
